@@ -17,6 +17,8 @@ let winner = null;
 
   /*----- event listeners -----*/
   document.querySelector('.dropdown-content').addEventListener('click', handleWord);
+  document.querySelector('#keys').addEventListener('click', handleKeys);
+
 
 
   /*----- functions -----*/
@@ -29,6 +31,17 @@ let winner = null;
   const rndWord = Math.floor(Math.random() * words[categorySel].length);
   guessWord = words[categorySel][rndWord];
   init();
+ }
+
+ function handleKeys(evt){
+  let keySelect = evt.target.innerHTML;
+  for(let i = 0; i < board.length; i++){
+    if(board[i] === keySelect){
+      let letIdx = i;
+      playerBoard[letIdx] = keySelect;
+    }
+  }
+  render();
  }
 
   function init() {
@@ -51,8 +64,13 @@ let winner = null;
   }
 
   function renderBoard(){
-    for(let i = 0; i < playerBoard.length; i++){
-    boardEl.innerHTML += playerBoard[i];
+    console.log(boardEl.innerHTML)
+    if(boardEl.innerHTML = "\n      "){
+      for(let i = 0; i < playerBoard.length; i++){
+      boardEl.innerHTML += playerBoard[i];
+      }
     }
+
+    
   }
 
