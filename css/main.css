@@ -64,6 +64,11 @@ body > h1{
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: deepskyblue;}
 
+img{
+  width: 75px;
+  height: 100px;
+}
+
 #board{
   color: white;
   font-size: 75px;
@@ -79,4 +84,12 @@ body > h1{
 #keys > button{
   height: 5vh;
   width: 3vw;
+}
+
+h2{
+  color: white;
+}
+
+img{
+  visibility: hidden;
 }
