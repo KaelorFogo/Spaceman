@@ -28,16 +28,17 @@ let guessesToGo = 0;
 
   /*----- functions -----*/
  function handleWord(evt){
-  winner = null;
-  guessWord = '';
-  playerBoard = [];
-  board = [];
-  winEl.innerHTML = '';
-  boardEl.innerText = '';
-  const categorySel = evt.target.innerText.toLowerCase();
-  const rndWord = Math.floor(Math.random() * words[categorySel].length);
-  guessWord = words[categorySel][rndWord];
-  init();
+   winner = null;
+   guessWord = '';
+   playerBoard = [];
+   board = [];
+   winEl.innerHTML = '';
+   boardEl.innerText = '';
+   guessesToGo = 0;
+   const categorySel = evt.target.innerText.toLowerCase();
+   const rndWord = Math.floor(Math.random() * words[categorySel].length);
+   guessWord = words[categorySel][rndWord];
+   init();
  }
 
  function handleKeys(evt){
@@ -53,7 +54,9 @@ let guessesToGo = 0;
   if(correctkey === 0){
     guessesToGo++
   }
-  render();
+  if(winner !== false){
+    render();
+  }
  }
 
   function init() {
@@ -76,13 +79,15 @@ let guessesToGo = 0;
   function render(){
     imgEl.src = `img/spaceman-${guessesToGo}.jpg`;
     renderBoard();
-    checkWin();
     renderMessage();
+    checkWin();
   }
 
   function renderMessage() {
     if(winner){
       winEl.innerHTML = 'You Won! Select a new category to continue!';
+    }else if(winner === false){
+      winEl.innerHTML = 'You Lost! Select a new category to try again!';
     }
   }
 
@@ -95,6 +100,12 @@ let guessesToGo = 0;
     })
     if(letLeft === 0){
       winner = true;
+    }
+
+    if(guessesToGo >= 6){
+      winner = false
+      guessesToGo = 6;
+      renderMessage();
     }
   }
 
