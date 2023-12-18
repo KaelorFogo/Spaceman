@@ -100,6 +100,7 @@ let guessesToGo = 0;
     })
     if(letLeft === 0){
       winner = true;
+      renderMessage();
     }
 
     if(guessesToGo >= 6){
@@ -116,4 +117,3 @@ let guessesToGo = 0;
       }
     }
   }
-
