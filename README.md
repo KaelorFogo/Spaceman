@@ -13,7 +13,7 @@ Spaceman is a guessing game for one or more players. The computer makes a word a
 * CSS
 
 ## Getting Started
-[Click to Play Connect Four!]()
+[Click to Play Spaceman!](https://kaelorfogo.github.io/Spaceman/)
 
 ## Next Steps
 
