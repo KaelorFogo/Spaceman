@@ -77,7 +77,7 @@ let guessesToGo = 0;
   }
 
   function render(){
-    imgEl.src = `img/spaceman-${guessesToGo}.jpg`;
+    imgEl.src = `img/spaceman-${guessesToGo}.png`;
     renderBoard();
     renderMessage();
     checkWin();
