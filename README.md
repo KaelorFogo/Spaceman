@@ -1,5 +1,5 @@
 # SpaceMan
-Spaceman is a guessing game for one or more players. The computer makes a word and the other(s) tries to guess it by suggesting letters or numbers within a certain number of guesses.
+Spaceman is a guessing game for one or more players. The computer makes a word and the other(s) tries to guess it by suggesting letters within a certain number of guesses.
 ---
 
 ## ScreenShot
@@ -17,5 +17,5 @@ Spaceman is a guessing game for one or more players. The computer makes a word a
 
 ## Next Steps
 
-- Future enhancement one is add keyboard functionality.
-- Future enhancement two more perfessional looks.
+- Future enhancement one, add keyboard functionality.
+- Future enhancement two, adding more perfessional looks.
