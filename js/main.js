@@ -1,37 +1,37 @@
 /*----- constants -----*/
 const words = {
   movies: [
-    "interstellar",
-    "spider man",
-    "star wars",
-    "good will hunting",
-    "the breakfast club",
-    "inception",
+    "INTERSTELLAR",
+    "SPIDER MAN",
+    "STAR WARS",
+    "GOOD WILL HUNTING",
+    "THE BREAKFAST CLUB",
+    "INCEPTION",
   ],
   music: [
-    "drake",
-    "mac miller",
-    "kanye west",
-    "ice cube",
-    "lady gaga",
-    "ariana grande",
+    "DRAKE",
+    "MAC MILLER",
+    "KANYE WEST",
+    "ICE CUBE",
+    "LADY GAGA",
+    "ARIANA GRANDE",
   ],
   geography: [
-    "united states",
-    "france",
-    "japan",
-    "australia",
-    "columbia",
-    "Czechoslovakia",
+    "UNITED STATES",
+    "FRANCE",
+    "JAPAN",
+    "AUSTRALIA",
+    "COLUMBIA",
+    "CZECHOSLOVAKIA",
   ],
   animals: [
-    "kangaroo",
-    "bald eagle",
-    "beaver",
-    "treefrog",
-    "python",
-    "dolphin",
-    "blob fish",
+    "KANGAROO",
+    "BALD EAGLE",
+    "BEAVER",
+    "TREEFROG",
+    "PYTHON",
+    "DOLPHIN",
+    "BLOB FISH",
   ],
 };
 
@@ -101,7 +101,6 @@ function init() {
   }
   render();
   imgEl.style.visibility = "visible";
-  keysEl.style.visibility = "visible";
 }
 
 function render() {
